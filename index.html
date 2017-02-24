@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <title>Tabs With jQuery</title>
+        <link rel="stylesheet" href="style/css/style-layout.css" />
+        <link href='https://1.bp.blogspot.com/-R4_853R5veU/WLCQmhAbn7I/AAAAAAAACEc/B8eq9lbP0UchciPfgAwr4-uzHPzGZ9_5ACLcB/s1600/icon.ico' rel='shortcut icon'/>
+        <style>
+            .my-container iframe { width: 100%; height: 100% }
+            .my-container { margin: 0 auto; width: 600px; height: 350px }
+            .my-container ul { list-style: none; padding: 0; margin: 0 }
+            .my-container ul li {cursor: pointer; margin: 5px }         
+            .my-container .contant-tabs { margin-top: -5px }
+            .my-container div:not(:first-of-type) { display: none }
+            .my-container a { text-decoration: none; padding: 7.2px; margin: 5px }
+            .my-container .x-show { opacity: 0.6; cursor: not-allowed }
+            
+            .my-container iframe, .my-container ul li:hover, .my-container ul li.inactive, .my-container div, .my-container .contant-tabs, .my-container a:hover, .my-container a.in-active { background: #50514F }
+            .my-container, .my-container a, .my-container a.in-active { color: #fff }
+            .my-container ul li, .my-container ul li.inactive:hover, .my-container a, .my-container a.in-active:hover { background: #F25F5C }
+            .my-container ul li.inactive, .my-container ul li:hover, .my-container a, .my-container a.in-active, .my-container ul li { border: 1px solid #F25F5C }
+            .my-container ul li, .my-container a { display: inline-block }
+            .my-container div, .my-container .contant-tabs, .my-container ul li { padding: 10px }
+            .my-container, .my-container .contant-tabs, .my-container ul li, .my-container ul { text-align: center }
+            
+            .my-container a, .my-container a.in-active, .my-container ul li, .my-container ul li:hover{
+                 transition: all 900ms ease;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="my-container">
+            
+            <div id="tab01-contant">
+                <a target="this-paly" id="_01" class="in-active" href=" http://mkabumattar.co.vu/01/ " >01</a>
+                <a                    id="_02" class="in-active x-show"                                >02</a>
+                <a target="this-paly" id="_03" class="in-active" href=" http://mkabumattar.co.vu/03/ " >03</a>
+            </div>
+            
+            <div id="tab02-contant">
+                <a target="this-paly" id="_01" class="in-active" href=" http://mkabumattar.co.vu/01/ " >01</a>
+                <a target="this-paly" id="_02" class="in-active" href=" http://mkabumattar.co.vu/02/ " >02</a>
+                <a target="this-paly" id="_03" class="in-active" href=" http://mkabumattar.co.vu/03/ " >03</a>
+            </div>
+            
+            <div id="tab03-contant">
+                <a target="this-paly" id="_01" class="in-active" href=" http://mkabumattar.co.vu/01/ " >01</a>
+                <a target="this-paly" id="_02" class="in-active" href=" http://mkabumattar.co.vu/02/ " >02</a>
+                <a target="this-paly" id="_03" class="in-active" href=" http://mkabumattar.co.vu/03/ " >03</a>
+            </div>
+            
+            <iframe name="this-paly" allowfullscreen frameborder="0" scrolling="no" width="600px" height="350px"></iframe>
+            
+            <ul id="my-tabs" class="contant-tabs">
+                <li id="tab01">01</li>
+                <li id="tab02" class="inactive">02</li>
+                <li id="tab03" class="inactive">03</li>
+            </ul>
+            
+        </div>
+        <script type="text/javascript" src="style/js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="style/js/plugins.js"></script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+.my-container iframe { width: 100%; height: 100% }
+.my-container { margin: 0 auto; width: 600px; height: 350px }
+.my-container ul { list-style: none; padding: 0; margin: 0 }
+.my-container ul li {cursor: pointer; margin: 5px }         
+.my-container .contant-tabs { margin-top: -5px }
+.my-container div:not(:first-of-type) { display: none }
+.my-container a { text-decoration: none; padding: 7.2px; margin: 5px }
+.my-container .x-show { opacity: 0.6; cursor: not-allowed }
+            
+.my-container iframe, .my-container ul li:hover, .my-container ul li.inactive, .my-container div, .my-container .contant-tabs, .my-container a:hover, .my-container a.in-active { background: #50514F }
+.my-container, .my-container a, .my-container a.in-active { color: #fff }
+.my-container ul li, .my-container ul li.inactive:hover, .my-container a, .my-container a.in-active:hover { background: #F25F5C }
+.my-container ul li.inactive, .my-container ul li:hover, .my-container a, .my-container a.in-active, .my-container ul li { border: 1px solid #F25F5C }
+.my-container ul li, .my-container a { display: inline-block }
+.my-container div, .my-container .contant-tabs, .my-container ul li { padding: 10px }
+.my-container, .my-container .contant-tabs, .my-container ul li, .my-container ul { text-align: center }
+            
+.my-container a, .my-container a.in-active, .my-container ul li, .my-container ul li:hover{transition: all 900ms ease;}
